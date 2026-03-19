@@ -368,7 +368,7 @@ export default function Game() {
             <CardHeader>
               <CardTitle className="text-2xl text-orange-500">The Office is on Fire! 🔥</CardTitle>
               <CardDescription className="text-zinc-400 text-base">
-                Smoke is filling the room. Who saves you first, and why?
+                Smoke is filling the room. Who are you saving first, and why?
               </CardDescription>
             </CardHeader>
             <CardContent>
