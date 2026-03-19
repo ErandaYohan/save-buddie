@@ -305,7 +305,7 @@ export default function Game() {
                 </CardHeader>
                 <CardContent className="pt-6 space-y-6">
                   <div className="space-y-1">
-                    <p className="text-xs uppercase tracking-widest text-zinc-500 font-semibold">Saved By</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 font-semibold">Saved</p>
                     <p className="text-2xl font-bold text-zinc-100">{selectedPlayer.savedBy}</p>
                   </div>
                   <div className="space-y-2">
@@ -374,7 +374,7 @@ export default function Game() {
             <CardContent>
               <form onSubmit={handleSubmitChoice} className="space-y-6">
                 <div className="space-y-3">
-                  <Label className="text-zinc-300">Select who saves you:</Label>
+                  <Label className="text-zinc-300">Who are you saving:</Label>
                   <Select value={savedBy} onValueChange={(val) => setSavedBy(val || "")} required>
                     <SelectTrigger className="w-full bg-zinc-950 border-zinc-800 focus:ring-orange-500 text-zinc-100">
                       <SelectValue placeholder="Select a colleague" />
@@ -388,7 +388,7 @@ export default function Game() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="reason" className="text-zinc-300">Why did they save you?</Label>
+                  <Label htmlFor="reason" className="text-zinc-300">Why did you save them?</Label>
                   <Textarea
                     id="reason"
                     value={reason}
